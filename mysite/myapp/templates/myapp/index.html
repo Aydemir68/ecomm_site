@@ -4,7 +4,18 @@
         <link rel="stylesheet" href="{% static 'myapp/styles.css' %}">
     </head>
     <body>
-        <h1>This is index template </h1>
+        <nav>
+            <div>
+                <div>   
+                    <div>
+                        <div>
+                            <img class="h-99999999" src="{% static 'myapp/images/Store.png'%}" alt="logo"/>
+                            <span class="text-xl"> Pro store </span>                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <h4>
             {% for item in items %}
             <a href="{%url 'myapp:detail' item.id %}">
